@@ -1,0 +1,135 @@
+.card{
+   width: 300px;
+   height: 350px;
+   padding: 10px;
+   box-shadow: 0px 0px 5px rgb(209, 207, 207);
+}
+.card_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.card_img button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: grey;
+}
+
+.card_img button:hover{
+    display:inline;
+    color: #ff9f1c;
+}
+
+.card_img .img{ 
+    object-fit:contain;
+    width: 216px;
+    height: 216px;
+   
+}
+
+.card_img .img{
+    border-radius: 10px;
+}
+
+.text_content p{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    vertical-align: middle;
+    width: 216px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.text_content b{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.icons_container{
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+    gap: 10px;
+    font-size: 20px;
+    color: #ff9f1c;
+}
+
+.card_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.active{
+    color:yellow;
+}
+
+.inactive{
+    color:white;
+}
+
+.card_img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_img img {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card_img:hover img {
+    opacity: 0.5;
+  }
+  
+  .left_button, .right_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .left_button {
+    left: 10px;
+  }
+  
+  .right_button {
+    right: 10px;
+  }
+  
+  .left_button:hover, .right_button:hover {
+    color: #ff0000; 
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  
