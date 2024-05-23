@@ -3,6 +3,7 @@ import Products from '../../components/products/Products'
 import useProduct from '../../context/api/api';
 import useWishlist from '../../context/like/wishlist';  
 import  {useCart}  from '../../context/cart/cart';
+import Banner from '../../components/banner/Banner';
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
     
   return (
     <>
+    <Banner/>
      <Products products={products} toggleWishlist={toggleWishlist} setWishlist={setWishlist} cart={cart} setCart={setCart}  />
     </>
   )
